@@ -1,0 +1,57 @@
+# Загальні правила для всіх проєктів
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python-specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Byte-compiled / optimized / DLL files
+*.pyo
+*.exe
+*.dll
+*.so
+
+# Virtual environment directories
+venv/
+ENV/
+env/
+.venv/
+
+# Python distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python test / coverage / lint reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+.cache
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+.jupyter/
+
+# PyCharm/VS Code settings
+.idea/
+.vscode/
+
+# General logs, backups, and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
