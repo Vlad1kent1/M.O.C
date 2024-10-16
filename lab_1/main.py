@@ -44,7 +44,7 @@ def absolute_error(N):
 
 # Функція для збереження результатів у файл
 def save_to_file(N):
-    with open("save.txt", "w") as file:
+    with open("save1.txt", "w") as file:
         file.write(f"Order N: {N}\n")
         file.write("Coefficients:\n")
         a_0 = get_coefficients(0)
@@ -119,7 +119,7 @@ def plot_fourier(N):
     plt.show()
 
 def main():
-    N = 10
+    N = 30
     save_to_file(N)
     plot_harmonics(N)
     plot_spectrum()
