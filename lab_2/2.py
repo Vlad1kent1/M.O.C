@@ -1,4 +1,4 @@
-from math import cos, sin, pi, sqrt, atan2
+from math import cos, sin, pi, sqrt, atan
 import numpy as np
 import matplotlib.pyplot as plt
 import json
@@ -23,8 +23,18 @@ def calculate_phases_and_amplitudes(coefficients):
 
     for A, B in coefficients:
         C = sqrt(A**2 + B**2)
-        phi = atan2(B, A)
 
+        if round(A, 4) != 0:
+            phi = atan(B/A)
+            if B>0 and A<0:
+                phi += pi/2
+            elif B<0 and A<0:
+                phi += pi
+            elif B<0 and A>0:
+                phi += 3*pi/2
+        else:
+            phi = pi/2
+        print(phi)
         amplitudes.append(C)
         phases.append(phi)
 
